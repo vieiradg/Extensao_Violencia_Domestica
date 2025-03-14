@@ -1,9 +1,6 @@
 # Projeto_Extenssao-
-Link - https://vieiradg.github.io/Projeto_Extenssao/
 
-Projeto de Modais Interativos
-
-Este projeto implementa um sistema de modais interativos utilizando HTML, SCSS e JavaScript. Ele permite a abertura e o fechamento de modais ao clicar em botões específicos, proporcionando uma interface dinâmica e intuitiva.
+Este projeto é um projeto de carga horária de extensão feito por alunos da Uniasselvi. Ele implementa um sistema de modais interativos utilizando HTML, SCSS e JavaScript. O sistema permite a abertura e o fechamento de modais ao clicar em botões específicos, proporcionando uma interface dinâmica e intuitiva.
 
 📌 Funcionalidades
 
@@ -26,6 +23,7 @@ JavaScript (ES6+): Manipulação do DOM para interatividade.
 Clone este repositório:
 
 git clone [Clone o projeto](https://github.com/vieiradg/Projeto_Extenssao.git)
+
 Deploy [Visualize o site](https://vieiradg.github.io/Projeto_Extenssao/)
 
 Acesse o diretório do projeto:
