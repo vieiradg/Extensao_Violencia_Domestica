@@ -150,65 +150,81 @@ section p {
 
 .help {
   width: 100%;
-  height: 60vh;
+  min-height: 400px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem 1rem;
 }
+
 .help h4 {
-  font-size: 3.6rem;
+  font-size: 3rem; 
   font-weight: 600;
   color: #1F2937;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem; 
 }
+
 .help .paragrafo__cima {
-  width: 55vw;
-  font-size: 2rem;
+  width: 90%;
+  max-width: 800px;
+  font-size: 1.8rem; 
   font-weight: 400;
   text-align: center;
+  margin-bottom: 2rem; 
 }
+
 .help .help__container {
-  width: 100%;
-  height: 60vh;
+  width: 95%; 
+  max-width: 1200px; 
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap; 
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start; 
+  gap: 2rem;
 }
+
 .help .help__container .secao {
-  width: 58.5rem;
-  height: 30rem;
+  width: calc(50% - 1rem); 
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: left;
+  align-items: flex-start; 
   background-color: #FFFFFF;
-  padding: 2rem;
-  border-radius: 1.8rem;
-  box-shadow: 0px 9px 9px 0px rgba(107, 69, 115, 0.1019607843);
+  padding: 1.5rem; 
+  border-radius: 1.5rem; 
+  box-shadow: 0px 5px 5px 0px rgba(107, 69, 115, 0.1019607843);
 }
+
 .help .help__container .secao .secao__titulo {
-  width: 85%;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 1.5rem;
-  font-size: 2.4rem;
+  gap: 1rem; 
+  font-size: 2rem; 
   font-weight: 600;
   color: #5E2D79;
+  margin-bottom: 1rem;
+  width: max-content;
 }
+
 .help .help__container .secao .secao__titulo img {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 2.8rem; 
+  height: 2.8rem; 
 }
+
 .help .help__container .secao .paragrafo__baixo {
-  font-size: 1.8rem;
+  font-size: 1.6rem; 
+  line-height: 1.5;
 }
+
 .help .help__container .secao ul {
-  font-size: 1.8rem;
-  padding: 2rem;
+  font-size: 1.6rem; 
+  padding-left: 1.5rem; 
+  margin-top: 1rem;
 }
+ 
+
 
 footer {
   width: 100%;
