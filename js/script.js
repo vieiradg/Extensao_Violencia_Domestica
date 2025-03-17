@@ -43,3 +43,53 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Função para abrir o modal
+    function abrirModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.style.display = 'flex';
+        }
+    }
+
+    // Função para fechar o modal
+    function fecharModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    // Eventos de clique "Leia Mais"
+    document.querySelector('.leia-mais.ajuda').addEventListener('click', function() {
+        abrirModal('modal-ajuda');
+    });
+
+    document.querySelector('.leia-mais.alerta').addEventListener('click', function() {
+        abrirModal('modal-alerta');
+    });
+
+    document.querySelector('.leia-mais.agressor').addEventListener('click', function() {
+        abrirModal('modal-agressor');
+    });
+
+    // Eventos de clique "Fechar Modal"
+    document.querySelectorAll('.fechar-modal').forEach(function(botao) {
+        botao.addEventListener('click', function() {
+            const modal = botao.closest('.modal');
+            if (modal) {
+                fecharModal(modal.id);
+            }
+        });
+    });
+
+    // Eventos de clique fora do modal
+    window.addEventListener('click', function(event) {
+        if (event.target.classList.contains('modal')) {
+            fecharModal(event.target.id);
+        }
+    });
+});

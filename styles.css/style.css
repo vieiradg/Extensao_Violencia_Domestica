@@ -570,3 +570,14 @@ footer .footer__container div .alunos li {
       font-size: 1.3rem;
   }
 }
+
+
+.leia-mais {
+  color: var(--modal-primary-color);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.leia-mais:hover {
+  text-decoration: underline;
+}
