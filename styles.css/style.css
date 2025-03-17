@@ -284,11 +284,15 @@ footer .footer__container div .alunos li {
       gap: 2rem;
       justify-content: center;
   }
+  .icons {
+      font-size: 1.8rem;
+      gap: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
   nav a .logo {
-      width: 10rem;
+      width: 8rem;
       height: auto;
   }
   section h1 {
@@ -314,6 +318,10 @@ footer .footer__container div .alunos li {
   }
   .help .help__container .secao {
       width: 90%;
+  }
+  .icons {
+      font-size: 1.6rem;
+      gap: 1rem;
   }
 }
 
@@ -347,5 +355,8 @@ footer .footer__container div .alunos li {
       text-align: center;
       gap: 1rem;
   }
+  .icons {
+      font-size: 1.4rem;
+      gap: 0.8rem;
+  }
 }
-
