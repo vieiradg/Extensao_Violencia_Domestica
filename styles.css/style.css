@@ -290,6 +290,18 @@ footer .footer__container div .alunos li {
       font-size: 1.4rem;
       gap: 2rem;
   }
+
+  .help {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -335,6 +347,18 @@ footer .footer__container div .alunos li {
       font-size: 1.2rem;
       gap: 1.8rem;
   }
+
+  .help {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -375,19 +399,24 @@ footer .footer__container {
     flex-direction: column;
     text-align: center;
     gap: 4rem;
-    color: black;
-}
-
-.alunos {
-  flex-direction: column;
-    text-align: center;
-    gap: 4rem;
-    color: black;
 }
 
 .icons {
     font-size: 1rem;
     gap: 1.2rem;
 }
+
+.help {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+  
+  
 
 }
