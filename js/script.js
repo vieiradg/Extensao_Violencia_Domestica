@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    document.querySelectorAll(".card__link").forEach((botao, index) => {
-        const modalIds = Object.keys(modais);
+    document.querySelectorAll(".card__link a").forEach((botao) => {
         botao.addEventListener("click", (event) => {
             event.preventDefault();
-            abrirModal(modalIds[index]);
+            const modalId = botao.getAttribute("data-modal"); // Usa um atributo data-modal para identificar qual modal abrir
+            abrirModal(modalId);
         });
     });
 
