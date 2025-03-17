@@ -20,21 +20,20 @@ a {
 
 nav {
   width: 100%;
-  min-height: 60px; 
+  min-height: 50px; 
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   z-index: 1;
   background-color: #5E2D79;
   color: #FFFFFF;
-  padding: 0.8rem 1.5rem; 
-  box-sizing: border-box; 
+  padding: 0.5rem 1rem; 
+  box-sizing: border-box;
 }
 
 nav a .logo {
-  max-width: 120px; 
+  max-width: 100px; 
   height: auto;
 }
 
@@ -44,7 +43,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 1rem;
+  gap: 0.8rem; 
 }
 
 nav ul li {
@@ -54,30 +53,30 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 1.4rem;
+  font-size: 1.2rem; 
   color: #FFFFFF;
   text-decoration: none;
 }
 
 nav ul .liColorida {
   background-color: #FF7F50;
-  border-radius: 1rem; 
-  padding: 0.4rem 0.8rem; 
+  border-radius: 0.8rem; 
+  padding: 0.3rem 0.6rem; 
 }
 
 section {
   width: 100%;
-  min-height: 400px; 
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem; 
-  box-sizing: border-box; 
+  padding: 2rem 1rem;
+  box-sizing: border-box;
 }
 
 section h1 {
-  font-size: 3.5rem; 
+  font-size: 3rem; 
   font-weight: 700;
   color: #1F2937;
   margin-bottom: 1rem;
@@ -86,8 +85,8 @@ section h1 {
 
 section p {
   width: 90%;
-  max-width: 800px; 
-  font-size: 1.8rem; 
+  max-width: 800px;
+  font-size: 1.6rem; 
   font-weight: 300;
   text-align: center;
   line-height: 1.5;
