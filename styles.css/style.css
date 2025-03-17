@@ -259,95 +259,93 @@ footer .footer__container div .alunos li {
 
 /* Responsivos */
 
-@media (min-width: 1201px){
+@media (max-width: 1024px) {
   nav {
       flex-direction: column;
       height: auto;
-      padding: 1rem;
+      padding: 2rem;
   }
   nav ul {
-      width: 90%;
+      width: 100%;
       flex-direction: column;
       align-items: center;
-      gap: 1rem;
+      gap: 1.5rem;
   }
   nav ul li {
-      width: 80%;
+      width: 100%;
       text-align: center;
   }
   section p {
-      width: 70%;
-      font-size: 1.2rem;
+      width: 80%;
+      font-size: 1.8rem;
   }
   .cards .card__container {
       flex-wrap: wrap;
-      gap: 1.8rem;
+      gap: 2rem;
       justify-content: center;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width: 768px) {
   nav a .logo {
-    width: 3rem;
-    height: auto;
-}
-section h1 {
-    font-size: 2.8rem;
-    text-align: center;
-}
-section p {
-    font-size: 1.8rem;
-    width: 95%;
-    text-align: center;
-}
-.cards .card__container {
-    flex-direction: column;
-    align-items: center;
-}
-.cards .card__container .card {
-    width: 100%;
-}
-.help .help__container {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-.help .help__container .secao {
-    width: 80%;
+      width: 10rem;
+      height: auto;
+  }
+  section h1 {
+      font-size: 3.2rem;
+      text-align: center;
+  }
+  section p {
+      font-size: 1.8rem;
+      width: 85%;
+      text-align: center;
+  }
+  .cards .card__container {
+      flex-direction: column;
+      align-items: center;
+  }
+  .cards .card__container .card {
+      width: 90%;
+  }
+  .help .help__container {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+  }
+  .help .help__container .secao {
+      width: 90%;
+  }
 }
 
-}
-
-
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 480px) {
   nav {
-    padding: 1rem;
-}
-nav ul {
-    flex-direction: column;
-    gap: 0rem;
-}
-section h1 {
-    font-size: 3rem;
-    text-align: center;
-}
-section p {
-    font-size: 1.8rem;
-    width: 50%;
-    text-align: center;
-}
-.cards .card__container .card {
-    width: 20;
-    padding: 1rem;
-}
-.help .help__container .secao {
-    width:  30%;
-    padding: 1rem;
-}
-footer .footer__container {
-    flex-direction: column;
-    text-align: center;
-    gap: 3rem;
+      padding: 1rem;
+  }
+  nav ul {
+      flex-direction: column;
+      gap: 1rem;
+  }
+  section h1 {
+      font-size: 2.8rem;
+      text-align: center;
+  }
+  section p {
+      font-size: 1.6rem;
+      width: 95%;
+      text-align: center;
+  }
+  .cards .card__container .card {
+      width: 100%;
+      padding: 1.5rem;
+  }
+  .help .help__container .secao {
+      width: 100%;
+      padding: 1.5rem;
+  }
+  footer .footer__container {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+  }
 }
 
-}
