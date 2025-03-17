@@ -263,7 +263,7 @@ footer .footer__container div .alunos li {
   nav {
       flex-direction: column;
       height: auto;
-      padding: 1.5rem;
+      padding: 1rem;
   }
   nav ul {
       width: 100%;
@@ -293,8 +293,12 @@ footer .footer__container div .alunos li {
 }
 
 @media (max-width: 768px) {
+  nav {
+    padding: 0.8rem; 
+  }
+
   nav a .logo {
-      width: 6rem;
+      width: 5rem;
       height: auto;
   }
   section h1 {
@@ -335,39 +339,46 @@ footer .footer__container div .alunos li {
 
 @media (max-width: 480px) {
   nav {
-      padding: 1rem;
-  }
-  nav ul {
-      flex-direction: column;
-      gap: 1.5rem;
-  }
-  section h1 {
-      font-size: 2.4rem;
-      text-align: center;
-      margin-bottom: 1.5rem;
-  }
-  section p {
-      font-size: 1.4rem;
-      width: 95%;
-      text-align: center;
-      margin-bottom: 2,5rem;
-      line-height: 3;
-  }
-  .cards .card__container .card {
-      width: 100%;
-      padding: 2rem;
-  }
-  .help .help__container .secao {
-      width: 100%;
-      padding: 2rem;
-  }
-  footer .footer__container {
-      flex-direction: column;
-      text-align: center;
-      gap: 1,5rem;
-  }
-  .icons {
-      font-size: 1rem;
-      gap: 1.2rem;
-  }
+    padding: 0.5rem;
+}
+nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+nav a .logo {
+  width: 4.5rem; 
+  height: auto;
+}
+
+section h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+section p {
+    font-size: 1.4rem;
+    width: 95%;
+    text-align: center;
+    margin-bottom: 2,5rem;
+    line-height: 3;
+}
+.cards .card__container .card {
+    width: 100%;
+    padding: 2rem;
+}
+.help .help__container .secao {
+    width: 100%;
+    padding: 2rem;
+}
+footer .footer__container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1,5rem;
+}
+.icons {
+    font-size: 1rem;
+    gap: 1.2rem;
+}
+
 }
