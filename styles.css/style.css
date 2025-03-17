@@ -462,16 +462,14 @@ footer .footer__container div .alunos li {
   --modal-content-background: white;
   --modal-primary-color: #5E2D79;
   --modal-text-color: #6A6A6A;
-  --modal-close-button-background: black;
-  --modal-close-button-hover-background: #5E2D79;
   --modal-border-radius: 10px;
-  --modal-padding: 1.5rem; /* Ajustado para rem */
+  --modal-padding: 1.5rem;
   --modal-font-size-base: 1rem;
 }
 
 /* Modal geral */
 .modal {
-  display: none;
+  display: none; /* Inicialmente oculto */
   position: fixed;
   top: 0;
   left: 0;
@@ -489,53 +487,49 @@ footer .footer__container div .alunos li {
   position: relative;
   background: var(--modal-content-background);
   padding: var(--modal-padding);
-  height: 75vh;
-  width: 50vw;
+  max-height: 90vh; /* Altura máxima para evitar estouro */
+  width: 80vw; /* Largura ajustável */
   border-radius: var(--modal-border-radius);
   font-family: "Inter", sans-serif;
   font-weight: 500;
   color: var(--modal-text-color);
   box-sizing: border-box;
-  overflow-y: auto; /* Adicionado para rolagem em conteúdo longo */
+  overflow-y: auto; /* Adiciona rolagem se o conteúdo for longo */
 }
 
 /* Botão de fechar */
 .fechar-modal {
-  position: absolute;
-  top: 1rem; /* Ajustado para rem */
-  right: 1rem; /* Ajustado para rem */
-  height: 3rem; /* Ajustado para rem */
-  width: 3rem; /* Ajustado para rem */
-  background: var(--modal-close-button-background);
+  background: #000000;
   color: white;
   border: none;
   border-radius: var(--modal-border-radius);
+  padding: 0.5rem 1rem;
   cursor: pointer;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 1rem;
+  margin-top: 1rem; /* Espaço do conteúdo */
 }
 
 .fechar-modal:hover {
-  background: var(--modal-close-button-hover-background);
+  background: var(--modal-primary-color);
 }
 
 /* Conteúdo do modal */
 .titulo-modal {
   color: var(--modal-primary-color);
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .texto-resumo-modal {
-  font-size: 1.5rem;
-  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .titulo-lista-modal {
   color: var(--modal-primary-color);
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 1.5rem;
 }
 
@@ -545,12 +539,12 @@ footer .footer__container div .alunos li {
 }
 
 .item-lista-modal {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0.5rem 0;
 }
 
 .texto-modal {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-top: 2rem;
 }
@@ -558,29 +552,21 @@ footer .footer__container div .alunos li {
 /* Responsividade */
 @media (max-width: 768px) {
   .conteudo-modal {
-      width: 90vw;
-      height: 85vh;
+      width: 95vw;
       padding: 1rem;
   }
 
-  .fechar-modal {
-      top: 0.5rem;
-      right: 0.5rem;
-      height: 2.5rem;
-      width: 2.5rem;
-  }
-
   .titulo-modal {
-      font-size: 2.5rem;
+      font-size: 1.8rem;
   }
 
   .texto-resumo-modal,
   .item-lista-modal,
   .texto-modal {
-      font-size: 1.2rem;
+      font-size: 0.9rem;
   }
 
   .titulo-lista-modal {
-      font-size: 1.8rem;
+      font-size: 1.3rem;
   }
 }
