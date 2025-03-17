@@ -256,3 +256,19 @@ footer .footer__container div .alunos li {
   flex: 1 1 calc(33.33% - 10px); /* Define 1/3 da largura da UL, considerando o gap */
   max-width: calc(33.33% - 10px); /* Garante que não ultrapasse o limite */
 }/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 1020px) {
+  /* CLASSES GERAIS */
+  .card__container,.card__link {
+    flex-direction: column;
+  }
+
+  /* CABEÇALHO */
+  .help__container, .secao__titulo {
+    padding: 20px 8%;
+  }
+
+  .card__titulo {
+    font-size: 30px;
+  }
+}
