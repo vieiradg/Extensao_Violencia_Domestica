@@ -288,7 +288,7 @@ footer .footer__container div .alunos li {
 
 @media screen and (max-width: 768px) {
   nav a .logo {
-      width: 7rem;
+      width: 3rem;
       height: auto;
   }
   section h1 {
@@ -297,7 +297,7 @@ footer .footer__container div .alunos li {
   }
   section p {
       font-size: 1.8rem;
-      width: 80%;
+      width: 95%;
       text-align: center;
   }
   .cards .card__container {
@@ -305,7 +305,7 @@ footer .footer__container div .alunos li {
       align-items: center;
   }
   .cards .card__container .card {
-      width: 70%;
+      width: 100%;
   }
   .help .help__container {
       flex-direction: column;
@@ -319,14 +319,14 @@ footer .footer__container div .alunos li {
 
 @media screen and (max-width: 480px) {
   nav {
-      padding: 0,1rem;
+      padding: 0rem;
   }
   nav ul {
       flex-direction: column;
-      gap: 0,1rem;
+      gap: 0rem;
   }
   section h1 {
-      font-size: 1.2rem;
+      font-size: 0rem;
       text-align: center;
   }
   section p {
@@ -335,16 +335,16 @@ footer .footer__container div .alunos li {
       text-align: center;
   }
   .cards .card__container .card {
-      width: 50%;
-      padding: 1.5rem;
+      width: 40%;
+      padding: 1rem;
   }
   .help .help__container .secao {
-      width: 60%;
-      padding: 1.3rem;
+      width: 50%;
+      padding: 1rem;
   }
   footer .footer__container {
       flex-direction: column;
       text-align: center;
-      gap: 1rem;
+      gap: 3rem;
   }
 }
