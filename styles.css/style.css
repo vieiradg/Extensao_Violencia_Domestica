@@ -259,7 +259,7 @@ footer .footer__container div .alunos li {
 
 /* Responsivos */
 
-@media screen and (max-width: 1024px) {
+@media (min-width: 1201px){
   nav {
       flex-direction: column;
       height: auto;
@@ -286,65 +286,68 @@ footer .footer__container div .alunos li {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   nav a .logo {
-      width: 3rem;
-      height: auto;
-  }
-  section h1 {
-      font-size: 2.8rem;
-      text-align: center;
-  }
-  section p {
-      font-size: 1.8rem;
-      width: 95%;
-      text-align: center;
-  }
-  .cards .card__container {
-      flex-direction: column;
-      align-items: center;
-  }
-  .cards .card__container .card {
-      width: 100%;
-  }
-  .help .help__container {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-  }
-  .help .help__container .secao {
-      width: 80%;
-  }
+    width: 3rem;
+    height: auto;
+}
+section h1 {
+    font-size: 2.8rem;
+    text-align: center;
+}
+section p {
+    font-size: 1.8rem;
+    width: 95%;
+    text-align: center;
+}
+.cards .card__container {
+    flex-direction: column;
+    align-items: center;
+}
+.cards .card__container .card {
+    width: 100%;
+}
+.help .help__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.help .help__container .secao {
+    width: 80%;
 }
 
-@media screen and (max-width: 480px) {
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
   nav {
-      padding: 0rem;
-  }
-  nav ul {
-      flex-direction: column;
-      gap: 0rem;
-  }
-  section h1 {
-      font-size: 0rem;
-      text-align: center;
-  }
-  section p {
-      font-size: 1rem;
-      width: 50%;
-      text-align: center;
-  }
-  .cards .card__container .card {
-      width: 40%;
-      padding: 1rem;
-  }
-  .help .help__container .secao {
-      width: 50%;
-      padding: 1rem;
-  }
-  footer .footer__container {
-      flex-direction: column;
-      text-align: center;
-      gap: 3rem;
-  }
+    padding: 1rem;
+}
+nav ul {
+    flex-direction: column;
+    gap: 0rem;
+}
+section h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+section p {
+    font-size: 1.8rem;
+    width: 50%;
+    text-align: center;
+}
+.cards .card__container .card {
+    width: 20;
+    padding: 1rem;
+}
+.help .help__container .secao {
+    width:  30%;
+    padding: 1rem;
+}
+footer .footer__container {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+}
+
 }
