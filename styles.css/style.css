@@ -374,8 +374,17 @@ section p {
 footer .footer__container {
     flex-direction: column;
     text-align: center;
-    gap: 1,5rem;
+    gap: 4rem;
+    color: black;
 }
+
+.alunos {
+  flex-direction: column;
+    text-align: center;
+    gap: 4rem;
+    color: black;
+}
+
 .icons {
     font-size: 1rem;
     gap: 1.2rem;
