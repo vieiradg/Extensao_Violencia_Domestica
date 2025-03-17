@@ -20,7 +20,7 @@ a {
 
 nav {
   width: 100%;
-  min-height: 80px; 
+  min-height: 60px; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,12 +29,12 @@ nav {
   z-index: 1;
   background-color: #5E2D79;
   color: #FFFFFF;
-  padding: 1rem 2rem; 
+  padding: 0.8rem 1.5rem; 
   box-sizing: border-box; 
 }
 
 nav a .logo {
-  max-width: 150px; 
+  max-width: 120px; 
   height: auto;
 }
 
@@ -54,7 +54,7 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -62,7 +62,7 @@ nav ul li a {
 nav ul .liColorida {
   background-color: #FF7F50;
   border-radius: 1rem; 
-  padding: 0.5rem 1rem; 
+  padding: 0.4rem 0.8rem; 
 }
 
 section {
