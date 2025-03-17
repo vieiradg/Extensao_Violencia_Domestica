@@ -469,7 +469,7 @@ footer .footer__container div .alunos li {
 
 /* Modal geral */
 .modal {
-  display: none; /* Inicialmente oculto */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -487,14 +487,14 @@ footer .footer__container div .alunos li {
   position: relative;
   background: var(--modal-content-background);
   padding: var(--modal-padding);
-  max-height: 90vh; /* Altura máxima para evitar estouro */
-  width: 80vw; /* Largura ajustável */
+  max-height: 90vh;
+  width: 80vw;
   border-radius: var(--modal-border-radius);
   font-family: "Inter", sans-serif;
   font-weight: 500;
   color: var(--modal-text-color);
   box-sizing: border-box;
-  overflow-y: auto; /* Adiciona rolagem se o conteúdo for longo */
+  overflow-y: auto;
 }
 
 /* Botão de fechar */
@@ -506,7 +506,7 @@ footer .footer__container div .alunos li {
   padding: 0.5rem 1rem;
   cursor: pointer;
   font-size: 1rem;
-  margin-top: 1rem; /* Espaço do conteúdo */
+  margin-top: 1rem;
 }
 
 .fechar-modal:hover {
@@ -526,58 +526,4 @@ footer .footer__container div .alunos li {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-
-.titulo-lista-modal {
-  color: var(--modal-primary-color);
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.lista-modal {
-  list-style: none;
-  padding: 0;
-}
-
-.item-lista-modal {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
-
-.texto-modal {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-top: 2rem;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .conteudo-modal {
-      width: 95vw;
-      padding: 1rem;
-  }
-
-  .titulo-modal {
-      font-size: 1.8rem;
-  }
-
-  .texto-resumo-modal,
-  .item-lista-modal,
-  .texto-modal {
-      font-size: 0.9rem;
-  }
-
-  .titulo-lista-modal {
-      font-size: 1.3rem;
-  }
-}
-
-
-.leia-mais {
-  color: var(--modal-primary-color);
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.leia-mais:hover {
-  text-decoration: underline;
-}
+ 
