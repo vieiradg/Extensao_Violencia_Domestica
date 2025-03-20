@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,17 +9,18 @@
     <link rel="stylesheet" href="styles.css/gobal.css" />
     <link rel="stylesheet" href="styles.css/style.css" />
     <link rel="icon" type="image/png" href="" />
-    <title>Document</title>
+    <title>Juntos Contra a Violência Doméstica</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <img class="logo" src="assets/logo_branco.png" alt="">
+            <a href="#inicio"><img class="logo" src="assets/logo_branco.png" alt=""></a>
             <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Contato</a></li>
-                <li class="liColorida"><a href="">Peça ajuda</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li class="liColorida"><a href="#" data-modal="modal-ajuda-form">Peça ajuda</a></li>
             </ul>
         </nav>
     </header>
@@ -38,7 +40,10 @@
                         <h5>Como ajudar?</h5>
                     </div>
                     <p>Descubra maneiras eficazes de oferecer suporte a alguém em situação de violência.</p>
-                    <a href="" class="card__link">Leia mais</a>
+                    <div class="card__link">
+                        <a href="" data-modal="modal-ajuda">Leia mais</a>
+                        <img src="assets/seta.png" alt="">
+                    </div>
                 </div>
 
                 <div class="card">
@@ -47,7 +52,10 @@
                         <h5>Sinais de alerta</h5>
                     </div>
                     <p>Aprenda a identificar comportamentos abusivos e situações de risco para prevenir a violência.</p>
-                    <a href="" class="card__link">Leia mais</a>
+                    <div class="card__link">
+                        <a href="" data-modal="modal-alerta" class="card__link__a">Leia mais</a>
+                        <img src="assets/seta.png" alt="">
+                    </div>
                 </div>
 
                 <div class="card">
@@ -56,14 +64,18 @@
                         <h5>Perfil do agressor</h5>
                     </div>
                     <p>Entenda os padrões de comportamento comuns em agressores para prevenir situações de risco.</p>
-                    <a href="" class="card__link">Leia mais</a>
+                    <div class="card__link">
+                        <a href="" data-modal="modal-agressor" class="card__link__a">Leia mais</a>
+                        <img src="assets/seta.png" alt="">
+                    </div>
                 </div>
-           </div>
+            </div>
         </article>
 
-        <article class="help">
+        <article id="contato" class="help">
             <h4>Recursos de ajuda</h4>
-            <p class="paragrafo__cima">Se você ou alguém que você conhece precisa de apoio, saiba que existem recursos confiáveis prontos para ajudar. Não hesite em buscar ajuda!"</p>
+            <p class="paragrafo__cima">Se você ou alguém que você conhece precisa de apoio, saiba que existem recursos
+                confiáveis prontos para ajudar. Não hesite em buscar ajuda!"</p>
             <div class="help__container">
                 <div class="secao">
                     <div class="secao__titulo">
@@ -92,7 +104,7 @@
                     </ul>
                 </div>
             </div>
-            
+
         </article>
 
         <footer>
@@ -105,22 +117,160 @@
                         <li><span>Ligue 190 -</span> Polícia Militar (Emergências) </li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h5>Desenvolvido Por:</h5>
                     <ul class="alunos">
                         <li>Davi Benegto</li>
                         <li>Diego Vieira</li>
                         <li>Gustavo Marques</li>
-                        <li>Kamila Garcia</li>
+                        <li>Kamila Reis</li>
                         <li>Miguel Ângelo</li>
-                        <li>Nicolly</li>
+                        <li>Nicolly Almeida</li>
                         <li>Oséias</li>
                     </ul>
                 </div>
             </section>
-         </footer>
+        </footer>
+
+        <!-- modais das informações adicionais --->
+
+        <div class="modal" id="modal-ajuda">
+            <div class="conteudo-modal">
+                <h1 class="titulo-modal">Como Ajudar?</h1>
+                <p class="texto-resumo-modal">Saiba como oferecer suporte a alguém que está passando por uma situação de
+                    violência</p>
+
+                <h2 class="titulo-lista-modal">Passos para ajudar:</h2>
+                <ul class="lista-modal">
+                    <li class="item-lista-modal">Acredite na pessoa e ouça sem julgar.</li>
+                    <li class="item-lista-modal">Ofereça apoio emocional e valide seus sentimentos.</li>
+                    <li class="item-lista-modal">Respeite as decisões da pessoa, mesmo que você não concorde.</li>
+                    <li class="item-lista-modal">Ajude a criar um plano de segurança.</li>
+                    <li class="item-lista-modal">Forneça informações sobre recursos disponíveis (abrigos, linhas de
+                        apoio).</li>
+                    <li class="item-lista-modal">Ofereça ajuda prática (cuidar dos filhos, acompanhar em consultas).
+                    </li>
+                    <li class="item-lista-modal">Mantenha a confidencialidade, a menos que haja risco de vida.</li>
+                    <li class="item-lista-modal">Encoraje a busca por ajuda profissional.</li>
+                    <li class="item-lista-modal">Lembre-se: a segurança da pessoa deve ser sempre a prioridade. Não
+                        confronte o agressor diretamente, pois isso pode aumentar o risco para a vítima.</li>
+                </ul>
+
+                <p class="texto-modal">Se você suspeita que alguém está em perigo imediato, não hesite em chamar as
+                    autoridades.</p>
+
+                <button class="fechar-modal">Fechar</button>
+            </div>
+        </div>
+
+
+        <div class="modal" id="modal-alerta">
+            <div class="conteudo-modal">
+                <h1 class="titulo-modal">Sinais de Alerta!</h1>
+                <p class="texto-resumo-modal">Reconheça os sinais de um relacionamento abusivo ou potencialmente
+                    violento.</p>
+                <h2 class="titulo-lista-modal">Fique atento aos seguintes comportamentos:</h2>
+                <ul class="lista-modal">
+                    <li class="item-lista-modal">Controle excessivo sobre suas atividades, amizades ou finanças.</li>
+                    <li class="item-lista-modal">Ciúmes intensos e acusações frequentes de infidelidade.</li>
+                    <li class="item-lista-modal">Humilhações e críticas constantes.</li>
+                    <li class="item-lista-modal">Pressão para fazer coisas que você não quer, incluindo atividades
+                        sexuais.</li>
+                    <li class="item-lista-modal">Monitoramento de suas comunicações (telefone, e-mail, redes sociais).
+                    </li>
+                    <li class="item-lista-modal">Explosões de raiva seguidas de pedidos de desculpas e promessas de
+                        mudança.</li>
+                    <li class="item-lista-modal">Isolamento de amigos e familiares.</li>
+                    <li class="item-lista-modal">Estes sinais nem sempre são óbvios no início de um relacionamento, mas
+                        tendem a se intensificar com o tempo. É importante confiar em seus instintos e buscar ajuda se
+                        você se sentir desconfortável ou insegura.</li>
+                    <li class="item-lista-modal">Lembre-se: a segurança da pessoa deve ser sempre a prioridade. Não
+                        confronte o agressor diretamente, pois isso pode aumentar o risco para a vítima.</li>
+                </ul>
+
+                <p class="texto-modal">Se você reconhece vários desses sinais em seu relacionamento, considere buscar
+                    apoio de amigos, familiares ou profissionais especializados.</p>
+
+                <button class="fechar-modal">Fechar</button>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-agressor">
+            <div class="conteudo-modal">
+                <h1 class="titulo-modal">Perfil do Agressor</h1>
+                <p class="texto-resumo-modal">Entenda os padrões de comportamento comuns em agressores para identificar
+                    sinais de alerta.</p>
+
+                <h2 class="titulo-lista-modal">Características comuns:</h2>
+                <ul class="lista-modal">
+                    <li class="item-lista-modal">Comportamento controlador e possessivo.</li>
+                    <li class="item-lista-modal">Ciúmes excessivos e infundados.</li>
+                    <li class="item-lista-modal">Mudanças rápidas de humor.</li>
+                    <li class="item-lista-modal">Histórico de violência em relacionamentos anteriores.</li>
+                    <li class="item-lista-modal">Tendência a culpar outros por seus problemas.</li>
+                    <li class="item-lista-modal">Visão estereotipada sobre papéis de gênero.</li>
+                    <li class="item-lista-modal">Baixa autoestima mascarada por comportamento dominante.</li>
+                    <li class="item-lista-modal">É importante lembrar que nem todos os agressores apresentam todas essas
+                        características, e a presença de algumas delas não necessariamente indica que alguém é um
+                        agressor. No entanto, a combinação de vários desses comportamentos pode ser um sinal de alerta.
+                    </li>
+                </ul>
+
+                <p class="texto-modal">Se você reconhece muitos desses comportamentos em alguém próximo, busque ajuda e
+                    orientação profissional.</p>
+
+                <button class="fechar-modal">Fechar</button>
+            </div>
+        </div>
+
+        <!-- Modal do formulário de ajuda -->
+        <div class="modal" id="modal-ajuda-form">
+            <div class="conteudo-modal">
+                <h1 class="titulo-modal">Contato</h1>
+                <p class="texto-resumo-modal">Denuncie já!</p>
+
+                <form class="formulario-ajuda">
+                    <div class="form-row">
+                        <div class="form-grupo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+                        </div>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="email">Email</label>
+                        <div class="input-icon">
+                            <span class="icon">✉️</span>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="celular">Celular</label>
+                        <div class="input-icon">
+                            <span class="prefix">+21</span>
+                            <input type="tel" id="celular" name="celular" placeholder="Celular" required>
+                        </div>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Como podemos ajudar?" required></textarea>
+                        <div class="char-counter">0/100</div>
+                    </div>
+
+                    <button type="submit" class="enviar-form">Enviar</button>
+                </form>
+            </div>
+        </div>
     </main>
-    <script src="script.js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
