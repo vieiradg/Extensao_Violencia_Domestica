@@ -32,12 +32,20 @@ nav {
     color: #FFFFFF;
     padding: 3rem;
 
+<<<<<<< HEAD
     a {
         .logo {
             width: 15.2rem;
             height: 9.2rem;
         }
+=======
+   a {
+    .logo {
+        width: 15.2rem;
+        height: 9.2rem;
+>>>>>>> 39c9acc95f6608d70c65ce06bacab654a8cf0f4e
     }
+   }
 
     ul {
         width: 25vw;
@@ -150,8 +158,13 @@ section {
                 font-size: 1.8rem;
             }
 
+<<<<<<< HEAD
             .card__link {
                 width: 50%;
+=======
+           .card__link {
+            width: 50%;
+>>>>>>> 39c9acc95f6608d70c65ce06bacab654a8cf0f4e
 
                 a {
                     font-size: 2rem;
@@ -161,7 +174,11 @@ section {
                     margin-right: 0.5rem;
                 }
             }
+<<<<<<< HEAD
 
+=======
+           
+>>>>>>> 39c9acc95f6608d70c65ce06bacab654a8cf0f4e
         }
     }
 }
