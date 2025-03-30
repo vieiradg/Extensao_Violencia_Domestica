@@ -1,4 +1,4 @@
-# Projeto_Extenssao-
+# Projeto_Extenssao
 
 Este projeto é um projeto de carga horária de extensão feito por alunos da Uniasselvi. Ele implementa um sistema de modais interativos utilizando HTML, SCSS e JavaScript. O sistema permite a abertura e o fechamento de modais ao clicar em botões específicos, proporcionando uma interface dinâmica e intuitiva.
 
