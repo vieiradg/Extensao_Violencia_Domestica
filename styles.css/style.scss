@@ -1,5 +1,7 @@
+//fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+// Reset CSS
 :root {
     font-size: 62.5%;
 }
@@ -18,6 +20,8 @@ a {
     text-decoration: none;
 }
 
+// navegação e modais
+
 nav {
     width: 100%;
     height: 10vh;
@@ -32,21 +36,13 @@ nav {
     color: #FFFFFF;
     padding: 3rem;
 
-<<<<<<< HEAD
     a {
         .logo {
             width: 15.2rem;
             height: 9.2rem;
         }
-=======
-   a {
-    .logo {
-        width: 15.2rem;
-        height: 9.2rem;
->>>>>>> 39c9acc95f6608d70c65ce06bacab654a8cf0f4e
     }
-   }
-
+    
     ul {
         width: 25vw;
         display: flex;
@@ -75,6 +71,8 @@ nav {
         }
     }
 }
+
+//seções
 
 section {
     width: 100%;
@@ -158,13 +156,8 @@ section {
                 font-size: 1.8rem;
             }
 
-<<<<<<< HEAD
-            .card__link {
-                width: 50%;
-=======
            .card__link {
-            width: 50%;
->>>>>>> 39c9acc95f6608d70c65ce06bacab654a8cf0f4e
+                width: 50%;
 
                 a {
                     font-size: 2rem;
@@ -174,14 +167,11 @@ section {
                     margin-right: 0.5rem;
                 }
             }
-<<<<<<< HEAD
-
-=======
            
->>>>>>> 39c9acc95f6608d70c65ce06bacab654a8cf0f4e
         }
     }
 }
+
 
 .help {
     width: 100%;
@@ -253,6 +243,8 @@ section {
     }
 }
 
+//footer
+
 footer {
     width: 100%;
     height: 20vh;
@@ -300,15 +292,143 @@ footer {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 10px;
-                /* Espaçamento opcional entre os itens */
 
                 li {
                     flex: 1 1 calc(33.33% - 10px);
-                    /* Define 1/3 da largura da UL, considerando o gap */
                     max-width: calc(33.33% - 10px);
-                    /* Garante que não ultrapasse o limite */
                 }
             }
         }
     }
 }
+
+//modais 
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #FFFFFF; 
+    margin: auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 65rem;
+    height: 85rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    color: #1F2937;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+
+    h2 {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 3rem;
+        color: #5E2D79;
+    }
+
+    .modal-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+        gap: 2rem;
+
+        label {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #5E2D79;
+        }
+
+        input {
+            width: 100%;
+            height: 5rem;
+            border-radius: 1.8rem;
+            border: 2px solid #5E2D79;
+            padding-left: 1rem;
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+
+        textarea {
+           padding: 1rem;
+           border: 2px solid #5E2D79;
+           border-radius: 1.8rem;
+        }
+
+        button {
+            width: 100%;
+            height: 5rem;
+            background-color: #5E2D79; 
+            border-radius: 1.8rem;
+            border: none;
+            color: #FFFFFF;
+            font-size: 2rem;
+            font-weight: 600;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #1F2937; 
+                transition: background-color 0.3s ease; 
+            }
+        }
+
+        p {
+            font-size: 0.05rem;
+            font-weight: 400;
+            color: #1F2937;
+            margin-top: 2rem;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+
+        li {
+            font-weight: 400;
+            color: #1F2937;
+            margin-left: 1.5rem;
+        }
+
+        .li_final {
+            font-weight: 800;
+            color: #1F2937;
+            list-style: none;
+            margin-top: 2rem;
+        }
+    }
+  
+    .close {
+        color: #5E2D79;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        font-size: 5rem;
+        font-weight: bold;
+        cursor: pointer;
+    
+        &:hover {
+        color: #1F2937;
+        }
+    }
+}
+
+//responsividade 
+
