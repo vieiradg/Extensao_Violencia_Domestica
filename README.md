@@ -22,9 +22,9 @@ JavaScript (ES6+): Manipulação do DOM para interatividade.
 
 Clone este repositório:
 
-git clone [Clone o projeto](https://github.com/vieiradg/Projeto_Extenssao.git)
+git clone [Clone o projeto](https://github.com/vieiradg/Extensao_Violencia_Domestica.git)
 
-Deploy [Visualize o site](https://vieiradg.github.io/Projeto_Extenssao/)
+Deploy [Visualize o site](https://vieiradg.github.io/Extensao_Violencia_Domestica/)
 
 Acesse o diretório do projeto:
 
@@ -42,9 +42,6 @@ Abra o arquivo index.html no navegador para visualizar o funcionamento.
 🎨 Estilização
 
 O projeto utiliza SCSS para organização e otimização do CSS. Certifique-se de compilar o SCSS para CSS antes de executar o projeto:
-
-sass styles.scss styles.css
-
 
 📝 Licença
 
