@@ -23,3 +23,19 @@ window.addEventListener('click', e => {
     e.target.style.display = 'none';
   }
 });
+
+//hamburguer
+// Adicione isso no seu script.js
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuBtn = document.createElement('button');
+  mobileMenuBtn.className = 'mobile-menu-btn';
+  mobileMenuBtn.innerHTML = '☰';
+  
+  const nav = document.querySelector('nav');
+  nav.prepend(mobileMenuBtn);
+
+  mobileMenuBtn.addEventListener('click', function() {
+    const ul = document.querySelector('nav ul');
+    ul.style.display = ul.style.display === 'flex' ? 'none' : 'flex';
+  });
+});
