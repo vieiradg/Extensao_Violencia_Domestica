@@ -91,11 +91,10 @@ section p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #5E2D79;
-  /*background: linear-gradient(rgba(94, 45, 121, 0.7), rgba(94, 45, 121, 0.7)), url(../assets/mulher.jpg);
-  background-repeat: repeat;
+  background: linear-gradient(rgb(94, 45, 121), rgb(94, 45, 121)), url(../assets/mulher.jpg);
+  background-repeat: no-repeat;
   background-size: 100% 60%;
-  background-position: top; */
+  background-position: top;
 }
 .cards h2 {
   font-size: 4.8rem;
