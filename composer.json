@@ -1,0 +1,11 @@
+{
+    "name": "miguel/projeto_de_extensao",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Miguel\\ProjetoDeExtensao\\": "src/"
+        }
+    }
+}
