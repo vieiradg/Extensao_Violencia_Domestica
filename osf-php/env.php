@@ -1,8 +1,8 @@
 <?php
 
-if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(403);
-    exit("Acesso negado.");
+    exit('Acesso negado.');
 }
 
 use PHPMailer\PHPMailer\PHPMailer;
