@@ -43,5 +43,25 @@ Antes de contratar ou publicar o site, verifique se o servidor atende aos requis
 É altamente recomendável entrar em contato com o suporte técnico do provedor antes.
 
 ==================================================================
+==================================================================
+   TESTE LOCAL COM XAMPP (OU SIMILARES)
+==================================================================
+
+Você pode testar este formulário em um ambiente local, com o uso:
+
+   - XAMPP (Windows, Linux, macOS)
+   - WampServer (Windows)
+   - MAMP (macOS)
+
+Para funcionar corretamente localmente:
+
+   - É necessário ter acesso à internet.
+   - O envio de e-mails só funcionará se as portas necessárias estiverem liberadas (porta 587 ou 465).
+   - Algumas conexões podem ser bloqueadas por firewall ou antivírus local.
+   - Certifique-se de que o Apache e o PHP estão ativos no painel de controle do XAMPP.
+
+Atenção: mesmo em ambiente local, o formulário precisa se conectar ao servidor SMTP do Gmail — ou seja, o envio de mensagens exige internet ativa.
+
+==================================================================
 */
 ?>
