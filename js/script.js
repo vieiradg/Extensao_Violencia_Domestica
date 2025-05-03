@@ -1,4 +1,4 @@
-// Abrir modal
+//Abrir modal
 const openModalButtons = document.querySelectorAll('.open-modal');
 const closeButtons = document.querySelectorAll('.close');
 
@@ -10,14 +10,14 @@ openModalButtons.forEach(btn => {
   });
 });
 
-// Fechar modal
+//Fechar modal
 closeButtons.forEach(btn => {
   btn.addEventListener('click', () => {
     btn.closest('.modal').style.display = 'none';
   });
 });
 
-// Fechar clicando fora do conteúdo
+//Fechar modal clicando fora do conteúdo
 window.addEventListener('click', e => {
   if (e.target.classList.contains('modal')) {
     e.target.style.display = 'none';
@@ -25,7 +25,6 @@ window.addEventListener('click', e => {
 });
 
 //hamburguer
-// Adicione isso no seu script.js
 document.addEventListener('DOMContentLoaded', function() {
   const mobileMenuBtn = document.createElement('button');
   mobileMenuBtn.className = 'mobile-menu-btn';

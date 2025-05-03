@@ -181,7 +181,7 @@ section p {
 .help .help__container .secao {
   width: 58.5rem;
   height: 30rem;
-  display: flex;
+  isplay: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: left;
@@ -204,10 +204,10 @@ section p {
   width: 3.2rem;
   height: 3.2rem;
 }
-.help .help__container .secao .paragrafo__baixo {
+.help .help__container .paragrafo__baixo {
   font-size: 1.8rem;
 }
-.help .help__container .secao ul {
+.help .help__container ul {
   font-size: 1.8rem;
   padding: 2rem;
 }
@@ -249,12 +249,12 @@ footer .footer__container div ul {
 footer .footer__container div ul li span {
   font-weight: 600;
 }
-footer .footer__container div .alunos {
+footer .alunos {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-footer .footer__container div .alunos li {
+footer .alunos li {
   flex: 1 1 calc(33.33% - 10px);
   max-width: calc(33.33% - 10px);
 }
@@ -272,8 +272,7 @@ footer .footer__container div .alunos li {
   justify-content: center;
   align-items: center;
 }
-
-.modal-content {
+.modal .modal-content {
   background-color: #FFFFFF;
   margin: auto;
   padding: 2rem;
@@ -288,19 +287,19 @@ footer .footer__container div .alunos li {
   justify-content: space-evenly;
   align-items: left;
 }
-.modal-content h2 {
+.modal .modal-content h2 {
   font-family: Poppins;
   font-weight: 600;
   font-size: 3rem;
   color: #5E2D79;
 }
-.modal-content h3 {
+.modal .modal-content h3 {
   font-family: Poppins;
   font-weight: 600;
   font-size: 2rem;
   color: #5E2D79;
 }
-.modal-content .modal-form {
+.modal .modal-content .modal-form {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -308,12 +307,12 @@ footer .footer__container div .alunos li {
   align-items: left;
   gap: 2rem;
 }
-.modal-content .modal-form label {
+.modal .modal-content .modal-form label {
   font-size: 2rem;
   font-weight: 600;
   color: #5E2D79;
 }
-.modal-content .modal-form input {
+.modal .modal-content .modal-form input {
   width: 100%;
   height: 5rem;
   border-radius: 1.8rem;
@@ -322,12 +321,12 @@ footer .footer__container div .alunos li {
   font-size: 1.8rem;
   font-weight: 400;
 }
-.modal-content .modal-form textarea {
+.modal .modal-content .modal-form textarea {
   padding: 1rem;
   border: 2px solid #5E2D79;
   border-radius: 1.8rem;
 }
-.modal-content .modal-form button {
+.modal .modal-content .modal-form button {
   width: 100%;
   height: 5rem;
   background-color: #5E2D79;
@@ -338,34 +337,34 @@ footer .footer__container div .alunos li {
   font-weight: 600;
   cursor: pointer;
 }
-.modal-content .modal-form button:hover {
+.modal .modal-content .modal-form button:hover {
   background-color: #1F2937;
   transition: background-color 0.3s ease;
 }
-.modal-content .modal-form p {
+.modal .modal-content .modal-form p {
   font-size: 0.05rem;
   font-weight: 400;
   color: #1F2937;
   margin-top: 1rem;
 }
-.modal-content ul {
+.modal .modal-content ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: left;
 }
-.modal-content ul li {
+.modal .modal-content ul li {
   font-weight: 400;
   color: #1F2937;
   margin-left: 1.5rem;
 }
-.modal-content ul .li_final {
+.modal .modal-content ul .li_final {
   font-weight: 800;
   color: #1F2937;
   list-style: none;
   margin-left: 1rem;
 }
-.modal-content .close {
+.modal .close {
   color: #5E2D79;
   position: absolute;
   top: 1rem;
@@ -374,7 +373,7 @@ footer .footer__container div .alunos li {
   font-weight: bold;
   cursor: pointer;
 }
-.modal-content .close:hover {
+.modal .close:hover {
   color: #1F2937;
 }
 
@@ -387,7 +386,7 @@ footer .footer__container div .alunos li {
     height: auto;
     padding: 1rem;
     flex-direction: column;
-    align-items: flex-start;
+    lign-items: flex-start;
   }
   nav .logo {
     display: none;
@@ -411,8 +410,6 @@ footer .footer__container div .alunos li {
     width: 100% !important;
     margin-top: 1rem;
   }
-}
-@media (max-width: 768px) {
   #inicio {
     height: 50rem !important;
     padding: 5rem 1rem !important;
@@ -425,8 +422,6 @@ footer .footer__container div .alunos li {
     width: 90% !important;
     font-size: 1.6rem !important;
   }
-}
-@media (max-width: 768px) {
   .cards {
     height: 100rem !important;
     padding: 3rem 1rem !important;
@@ -445,59 +440,53 @@ footer .footer__container div .alunos li {
     height: 20rem !important;
     margin: 0 auto;
   }
-}
-@media (max-width: 768px) {
   .help {
-    height: 80rem !important;
-    padding: 3rem 1rem !important;
-    gap: 2rem !important;
+    height: 80rem;
+    padding: 3rem 1rem;
+    gap: 2rem;
     margin: 5rem 0;
   }
   .help h4 {
-    font-size: 2.4rem !important;
+    font-size: 2.4rem;
     margin-bottom: 1.5rem;
   }
   .help .paragrafo__cima {
-    width: 90% !important;
-    height: auto !important;
-    font-size: 1.6rem !important;
+    width: 90%;
+    height: auto;
+    font-size: 1.6rem;
     margin-bottom: 2rem;
   }
   .help .help__container {
-    flex-direction: column !important;
-    gap: 2rem !important;
+    flex-direction: column;
+    gap: 2rem;
   }
   .help .help__container .secao {
-    width: 90% !important;
-    height: auto !important;
+    width: 90%;
+    height: auto;
     min-height: 30rem;
     padding: 2rem;
     margin: 0 auto;
   }
-}
-@media (max-width: 768px) {
   footer {
-    height: 50rem !important;
-    padding: 2rem 1rem !important;
+    height: 50rem;
+    padding: 2rem 1rem;
   }
   footer .footer__container {
     height: auto;
-    flex-direction: column !important;
+    flex-direction: column;
     gap: 3rem !important;
   }
   footer .footer__container div {
-    width: 100% !important;
+    width: 100%;
     height: auto;
   }
   footer .footer__container div .alunos {
-    flex-direction: column !important;
-    gap: 0.5rem !important;
+    flex-direction: column;
+    gap: 0.5rem;
   }
   footer .footer__container div .alunos li {
-    flex: 1 1 100% !important;
+    flex: 1 1 100%;
   }
-}
-@media (max-width: 768px) {
   .modal-content {
     width: 90% !important;
     height: auto !important;
@@ -524,9 +513,8 @@ footer .footer__container div .alunos li {
     display: block;
   }
 }
-
 @media (max-width: 768px) {
-  nav ul {
+  .mobile-menu-btn nav ul {
     display: none;
     flex-direction: column;
     width: 100%;
