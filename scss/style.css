@@ -61,6 +61,11 @@ nav ul .liColorida {
   border-radius: 1.1rem;
   display: flex;
   justify-content: center;
+  transition: all 0.2s ease;
+}
+
+nav ul .liColorida:active {
+  transform: scale(0.9);
 }
 
 section {
@@ -272,26 +277,6 @@ footer .footer__container div .alunos li {
   justify-content: center;
   align-items: center;
 }
-/* Estilo modal-content anterior: 
-
-.modal-content {
-  background-color: #FFFFFF;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
-  width: 65rem;
-  height: 65rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  color: #1F2937;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: left;
-}
-  */
-
- /* Estilo modal-content modificado: */
 
  .modal-content {
   background-color: #FFFFFF;
@@ -310,7 +295,6 @@ footer .footer__container div .alunos li {
   overflow-y: auto;
 }
 
-/* FIM */
 
 .modal-content h2 {
   font-family: Poppins;
@@ -558,8 +542,6 @@ footer .footer__container div .alunos li {
 }/*# sourceMappingURL=style.css.map */
 
 
-/* ADICAO PARA STILO DA CONFIRMACAO DO FORMULARIO DE CONTATO */
-
 #mensagem-status {
   margin: 20px auto 10px auto;
   text-align: center;
@@ -569,5 +551,3 @@ footer .footer__container div .alunos li {
   max-width: 90%;
   word-wrap: break-word;
 }
-
-/* FIM CSS MENSSAGEM STATUS DO FORMULARIO DE CONTATO */

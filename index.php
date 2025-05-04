@@ -7,7 +7,7 @@
         <meta name="description" content="Violência doméstica é um problema sério que atinge milhares de pessoas todos os dias, principalmente mulheres. Este espaço foi criado para informar, acolher e orientar vítimas e pessoas próximas sobre como identificar os sinais, buscar ajuda e romper o ciclo de violência." />
         <link rel="stylesheet" href="scss/style.css" />
         <title>Juntos Contra a Violência Doméstica - Ajude quem precisa! </title>
-        <?php include 'osf-php/head_estiloso.php'; ?> <!--Titulo Dinamico e Icon --> 
+        <?php include 'php/head.php'; ?> <!--Titulo Dinamico e Icon --> 
     </head>
 
     <body>
@@ -22,7 +22,7 @@
                     <li class="liColorida"><a href="" class="open-modal" data-modal="modal1">Peça ajuda</a></li>
                 </ul>
                     <!-- Incidio do formulario de contato -->
-                    <?php require_once 'osf-php/formulario.php'; ?> <!-- Requisição do formulario de contato -->
+                    <?php require_once 'php/formulario.php'; ?>
                     <!-- Fim do formulario de contato -->
             </nav>
         </header>

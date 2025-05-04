@@ -47,13 +47,13 @@ cd nome-do-projeto
 3: Configure o formulário de contato:
 
 
-No arquivo osf-php/config_email.php, substitua os campos necessários:
+No arquivo php/config_email.php, substitua os campos necessários:
 
-seugmail @ gmail.com pelo seu e-mail do Gmail.
+seu_gmail pelo seu e-mail do Gmail.
 
 senha_aplicativo pela senha de aplicativo gerada no Gmail.
 
-email_destino @ gmail.com pelo e-mail que deve receber os formulários.
+email_destino pelo e-mail que deve receber os formulários.
 
 
 4: Execute o projeto:
@@ -77,15 +77,15 @@ Conexão com a internet (para envio de e-mails via PHPMailer).
 
 📂 Estrutura do Projeto
 
-├── index.php        # Estrutura principal do site
+├── index.php        	# Estrutura principal do site
 
-├── styles.scss       # Estilos da aplicação (compilado para CSS)
+├── styles.scss       	# Estilos da aplicação (compilado para CSS)
 
-├── script.js         # Código JavaScript para interatividade
+├── script.js         	# Código JavaScript para interatividade
 
-├── README.md         # Documentação do projeto
+├── php/		# Arquivos PHP para o funcionando do Formulário de Contato
 
-├── osf-php/		  # Arquivos PHP para o funcionando do Formulário de Contato
+├── README.md         	# Documentação do projeto
 
 
 🎨 Estilização
