@@ -73,9 +73,12 @@ Conexão com a internet (para envio de e-mails via PHPMailer).
 
 
 ⚠️ Importante: Este projeto não funcionará corretamente se aberto diretamente no navegador sem o uso de um servidor PHP.
+
 ⚠️ Se necessário, consulte o arquivo php/orientacoes.md para mais detalhes.
 
+
 📂 Estrutura do Projeto
+
 
 ├── index.php        	# Estrutura principal do site
 
