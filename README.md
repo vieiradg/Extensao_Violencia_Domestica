@@ -1,4 +1,4 @@
-# Projeto_Extenssao
+# Projeto_Extensão
 
 Este projeto é um projeto de carga horária de extensão feito por alunos da Uniasselvi. Ele implementa um sistema de modais interativos utilizando HTML, SCSS, JavaScript e PHP. O sistema permite a abertura e o fechamento de modais ao clicar em botões específicos e o envio de E-mail através do formulário de contato disponível, proporcionando uma interface dinâmica e intuitiva.
 
@@ -73,7 +73,7 @@ Conexão com a internet (para envio de e-mails via PHPMailer).
 
 
 ⚠️ Importante: Este projeto não funcionará corretamente se aberto diretamente no navegador sem o uso de um servidor PHP.
-
+⚠️ Se necessário, consulte o arquivo php/orientacoes.md para mais detalhes.
 
 📂 Estrutura do Projeto
 
@@ -83,7 +83,9 @@ Conexão com a internet (para envio de e-mails via PHPMailer).
 
 ├── script.js         	# Código JavaScript para interatividade
 
-├── php/		# Arquivos PHP para o funcionando do Formulário de Contato
+├── php/
+│   ├── config_email.php  # Configuração de envio de e-mail
+│   ├── orientacoes.md   # Instruções adicionais para configuração PHP
 
 ├── README.md         	# Documentação do projeto
 
