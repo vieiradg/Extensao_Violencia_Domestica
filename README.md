@@ -86,6 +86,7 @@ Conexão com a internet (para envio de e-mails via PHPMailer).
 ├── php/
 
 │   ├── config_email.php  # Configuração de envio de e-mail
+
 │   ├── orientacoes.md   # Instruções adicionais para configuração PHP
 
 ├── README.md         	# Documentação do projeto
