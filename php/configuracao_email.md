@@ -1,13 +1,4 @@
-<?php
-if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
-   http_response_code(403);
-   exit("Acesso negado.");
-}
-
-/*
-==================================================================
-   ORIENTAÇÕES PARA CONFIGURAÇÃO DO FORMULÁRIO DE CONTATO
-==================================================================
+# Orientações para Configuração do Formulário de Contato
 
 Este formulário utiliza a biblioteca PHPMailer e está configurado 
 para funcionar com um e-mail do Gmail.
@@ -42,9 +33,7 @@ Para que funcione corretamente, siga os passos abaixo:
 Antes de contratar ou publicar o site, verifique se o servidor atende aos requisitos acima.
 É altamente recomendável entrar em contato com o suporte técnico do provedor antes.
 
-==================================================================
-   TESTE LOCAL COM XAMPP (OU SIMILARES)
-==================================================================
+## Teste Local com XAMPP (ou similares)
 
 Você pode testar este formulário em um ambiente local, com o uso:
 
@@ -62,5 +51,3 @@ Para funcionar corretamente localmente:
 Atenção: mesmo em ambiente local, o formulário precisa se conectar ao servidor SMTP do Gmail — ou seja, o envio de mensagens exige internet ativa.
 
 ==================================================================
-*/
-?>
