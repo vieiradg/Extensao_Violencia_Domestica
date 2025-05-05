@@ -74,7 +74,7 @@ Conexão com a internet (para envio de e-mails via PHPMailer).
 
 ⚠️ Importante: Este projeto não funcionará corretamente se aberto diretamente no navegador sem o uso de um servidor PHP.
 
-⚠️ Se necessário, consulte o arquivo php/orientacoes.md para mais detalhes.
+⚠️ Se necessário, consulte o arquivo php/configuracao_email.md para mais detalhes.
 
 
 📂 Estrutura do Projeto
@@ -90,7 +90,7 @@ Conexão com a internet (para envio de e-mails via PHPMailer).
 
 │   ├── config_email.php  # Configuração de envio de e-mail
 
-│   ├── orientacoes.md   # Instruções adicionais para configuração PHP
+│   ├── configuracao_email.md   # Instruções adicionais para configuração PHP
 
 ├── README.md         	# Documentação do projeto
 
