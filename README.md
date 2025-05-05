@@ -84,6 +84,7 @@ Conexão com a internet (para envio de e-mails via PHPMailer).
 ├── script.js         	# Código JavaScript para interatividade
 
 ├── php/
+
 │   ├── config_email.php  # Configuração de envio de e-mail
 │   ├── orientacoes.md   # Instruções adicionais para configuração PHP
 
