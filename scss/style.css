@@ -60,12 +60,17 @@ nav ul .liColorida {
   background-color: #FF7F50;
   border-radius: 1.1rem;
   display: flex;
+  text-align: center;
   justify-content: center;
   transition: all 0.2s ease;
 }
 
 nav ul .liColorida:active {
   transform: scale(0.9);
+}
+
+header ul{
+  margin-left: 40%;
 }
 
 section {
