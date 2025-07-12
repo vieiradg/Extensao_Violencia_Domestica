@@ -1,40 +1,79 @@
-//Abrir modal
-const openModalButtons = document.querySelectorAll('.open-modal');
-const closeButtons = document.querySelectorAll('.close');
+// Mobile menu toggle
+const mobileMenuBtn = document.getElementById("mobile-menu-btn")
+const mobileMenu = document.getElementById("mobile-menu")
+const menuIcon = document.getElementById("menu-icon")
+const closeIcon = document.getElementById("close-icon")
 
-openModalButtons.forEach(btn => {
-  btn.addEventListener('click', e => {
-    e.preventDefault();
-    const modalId = btn.getAttribute('data-modal');
-    document.getElementById(modalId).style.display = 'flex';
-  });
-});
+mobileMenuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden")
+  menuIcon.classList.toggle("hidden")
+  closeIcon.classList.toggle("hidden")
+})
 
-//Fechar modal
-closeButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    btn.closest('.modal').style.display = 'none';
-  });
-});
+function closeMobileMenu() {
+  mobileMenu.classList.add("hidden")
+  menuIcon.classList.remove("hidden")
+  closeIcon.classList.add("hidden")
+}
 
-//Fechar modal clicando fora do conteúdo
-window.addEventListener('click', e => {
-  if (e.target.classList.contains('modal')) {
-    e.target.style.display = 'none';
+// Modal functions
+function openModal(modalId) {
+  document.getElementById(modalId).classList.remove("hidden")
+  document.body.style.overflow = "hidden"
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).classList.add("hidden")
+  document.body.style.overflow = "auto"
+}
+
+// Close modal when clicking outside
+document.addEventListener("click", (event) => {
+  const modals = ["modal-help", "modal-help-info", "modal-alerts", "modal-profile"]
+  modals.forEach((modalId) => {
+    const modal = document.getElementById(modalId)
+    if (event.target === modal) {
+      closeModal(modalId)
+    }
+  })
+})
+
+// Close modal with Escape key
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    const modals = ["modal-help", "modal-help-info", "modal-alerts", "modal-profile"]
+    modals.forEach((modalId) => {
+      const modal = document.getElementById(modalId)
+      if (!modal.classList.contains("hidden")) {
+        closeModal(modalId)
+      }
+    })
   }
-});
+})
 
-//hamburguer
-document.addEventListener('DOMContentLoaded', function() {
-  const mobileMenuBtn = document.createElement('button');
-  mobileMenuBtn.className = 'mobile-menu-btn';
-  mobileMenuBtn.innerHTML = '☰';
-  
-  const nav = document.querySelector('nav');
-  nav.prepend(mobileMenuBtn);
+// Form submission
+function handleFormSubmit(event) {
+  event.preventDefault()
+  alert("Mensagem enviada! Entraremos em contato em breve.")
+  closeModal("modal-help")
+  event.target.reset()
+}
 
-  mobileMenuBtn.addEventListener('click', function() {
-    const ul = document.querySelector('nav ul');
-    ul.style.display = ul.style.display === 'flex' ? 'none' : 'flex';
-  });
-});
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault()
+    const target = document.querySelector(this.getAttribute("href"))
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+    }
+  })
+})
+
+// Close mobile menu when clicking on navigation links
+document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+  link.addEventListener("click", closeMobileMenu)
+})
