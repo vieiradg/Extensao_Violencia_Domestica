@@ -1,208 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="Violência doméstica é um problema sério que atinge milhares de pessoas todos os dias, principalmente mulheres. Este espaço foi criado para informar, acolher e orientar vítimas e pessoas próximas sobre como identificar os sinais, buscar ajuda e romper o ciclo de violência." />
-        <link rel="stylesheet" href="scss/style.css" />
-        <title>Juntos Contra a Violência Doméstica - Ajude quem precisa! </title>
-        <?php include 'php/head.php'; ?> <!--Titulo Dinamico e Icon --> 
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Violência doméstica é um problema sério que atinge milhares de pessoas todos os dias, principalmente mulheres. Este espaço foi criado para informar, acolher e orientar vítimas e pessoas próximas sobre como identificar os sinais, buscar ajuda e romper o ciclo de violência." />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <title>Juntos Contra a Violência Doméstica</title>
+    <?php include 'php/head.php'; ?> <!-- Título dinâmico e ícone -->
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
 
-    <body>
-        <header>
-            <nav>
-                <h3 class="logo__titulo"><a href="#inicio">Instituição</a></h3>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                <div class="nav-menu">
+                    <a href="#inicio" class="nav-link">Início</a>
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                    <button onclick="openModal('modal-help')" class="btn-help">Peça Ajuda</button>
+                </div>
 
-                    <li class="liColorida"><a href="" class="open-modal" data-modal="modal1">Peça ajuda</a></li>
-                </ul>
-                    <!-- Incidio do formulario de contato -->
-                    <?php require_once 'php/formulario.php'; ?>
-                    <!-- Fim do formulario de contato -->
-            </nav>
-        </header>
+                <button id="mobile-menu-btn" class="mobile-menu-btn">
+                    <svg id="menu-icon" class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="close-icon" class="menu-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
 
-        <main>
-            <section id="inicio">
-                <h1>Juntos Contra a Violência Doméstica</h1>
-                <p>Estamos unidos para criar um mundo onde todos possam viver sem medo, com dignidade e respeito.</p>
-            </section>
+            <div id="mobile-menu" class="mobile-menu hidden">
+                <div class="mobile-menu-content">
+                    <a href="#inicio" class="mobile-nav-link" onclick="closeMobileMenu()">Início</a>
+                    <a href="#sobre" class="mobile-nav-link" onclick="closeMobileMenu()">Sobre</a>
+                    <a href="#contato" class="mobile-nav-link" onclick="closeMobileMenu()">Contato</a>
+                    <button onclick="openModal('modal-help'); closeMobileMenu();" class="btn-help mobile">Peça Ajuda</button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-            <article id="sobre" class="cards">
-                <h2>Como podemos ajudar?</h2>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1 class="hero-title">Juntos Contra a Violência Doméstica</h1>
+                <p class="hero-subtitle">Estamos unidos para criar um mundo onde todos possam viver sem medo, com dignidade e respeito.</p>
+            </div>
+        </section>
 
-                <div class="card__container">
-                    <div class="card">
-                        <div class="card__titulo">
-                            <img src="assets/interrogacao.png" alt="" />
-                            <h5>Como ajudar?</h5>
-                        </div>
+        <section id="sobre" class="cards-section">
+            <div class="container">
+                <h2 class="section-title">Como podemos ajudar?</h2>
 
-                        <p>Descubra maneiras eficazes de oferecer suporte a alguém em situação de violência.</p>
+                <div class="cards-grid">
+                    <!-- Cartões -->
+                    <?php require_once 'php/cards.php'; ?>
+                </div>
+            </div>
+        </section>
 
-                        <div class="card__link">
-                            <a href="" class="card__link__a open-modal" data-modal="modal2">Leia mais</a>
-                            <img src="assets/seta.png" alt="seta">
-                        </div>
+        <section id="contato" class="resources-section">
+            <div class="container">
+                <h2 class="section-title dark">Recursos de ajuda</h2>
+                <p class="section-subtitle">Se você ou alguém que você conhece precisa de apoio, saiba que existem recursos confiáveis prontos para ajudar. Não hesite em buscar ajuda!</p>
 
-                        <div id="modal2" class="modal">
-                            <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h2 class="h2_modal">Como Ajudar?</h2>
-                            <p>Saiba como oferecer suporte a alguém que está passando por uma situação de violência.</p>
-                            <h3 class="h3_modal">Passos para ajudar:</h3>
-                            <ul>
-                                <li><p>Acredite na pessoa e ouça sem julgar.</p></li>
-                                <li><p>Ofereça apoio emocional e valide seus sentimentos.</p></li>
-                                <li><p>Respeite as decisões da pessoa, mesmo que você não concorde.</p></li>
-                                <li><p>Ajude a criar um plano de segurança.</p></li>
-                                <li><p>Forneça informações sobre recursos disponíveis (abrigos, linhas de apoio).</p></li>
-                                <li><p>Ofereça ajuda prática (cuidar dos filhos, acompanhar em consultas).</p></li>
-                                <li><p>Encoraje a busca por ajuda profissional.</p></li>
-                                <li><p>Lembre-se: a segurança da pessoa deve ser sempre a prioridade. Não confronte o agressor diretamente, pois isso pode aumentar o risco para a vítima.</p></li>
-                                <li class="li_final"><p>Se você suspeita que alguém está em perigo imediato, não hesite em chamar as autoridades.</p></li>
-                            </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="resources-grid">
+                    <?php require_once 'php/recursos.php'; ?>
+                </div>
+            </div>
+        </section>
+    </main>
 
-                    <div class="card">
-                        <div class="card__titulo">
-                            <img src="assets/warning.png" alt="" />
-                            <h5>Sinais de alerta</h5>
-                        </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Disque Denúncia</h3>
+                    <ul class="footer-list">
+                        <li><span class="highlight">Ligue 180 -</span> Central de Atendimento</li>
+                        <li><span class="highlight">Disque 100 -</span> Direitos Humanos</li>
+                        <li><span class="highlight">Ligue 190 -</span> Polícia Militar (Emergências)</li>
+                    </ul>
+                </div>
 
-                        <p>Aprenda a identificar comportamentos abusivos e situações de risco para prevenir a violência.</p>
-
-                        <div class="card__link">
-                            <a href="" class="card__link__a open-modal" data-modal="modal3">Leia mais</a>
-                            <img src="assets/seta.png" alt="">
-                        </div>
-
-                        <div id="modal3" class="modal">
-                            <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h2 class="h2_modal">Sinais de Alerta!</h2>
-                            <p>Reconheça os sinais de um relacionamento abusivo ou potencialmente violento.</p>
-                            <h3 class="h3_modal">Fiquem atentos aos seguintes comportamentos:</h3>
-                            <ul>
-                                <li><p>Controle excessivo sobre suas atividades, amizades ou finanças.</p></li>
-                                <li><p>Ciúmes intensos e acusações frequentes de infidelidade.</p></li>
-                                <li><p>Humilhações e críticas constantes.</p></li>
-                                <li><p>Pressão para fazer coisas que você não quer, incluindo atividades sexuais.</p></li>
-                                <li><p>Monitoramento de suas comunicações (telefone, e-mail, redes sociais).</p></li>
-                                <li><p>Explosões de raiva seguidas de pedidos de desculpas e promessas de mudança.</p></li>
-                                <li><p>Isolamento de amigos e familiares.</p></li>
-                                <li><p>Estes sinais nem sempre são óbvios no início de um relacionamento, mas tendem a se intensificar com o tempo. É importante confiar em seus instintos e buscar ajuda se você se sentir desconfortável ou insegura.</p></li>
-                                <li class="li_final"><p>Se você reconhece vários desses sinais em seu relacionamento, considere buscar apoio de amigos, familiares ou profissionais especializados.</p></li>
-                            </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card__titulo">
-                            <img src="assets/grupo.png" alt="" />
-                            <h5>Perfil do agressor</h5>
-                        </div>
-
-                        <p>Entenda os padrões de comportamento comuns em agressores para prevenir situações de risco.</p>
-
-                        <div class="card__link">
-                            <a href="" class="card__link__a open-modal" data-modal="modal4">Leia mais</a>
-                            <img src="assets/seta.png" alt="">
-                        </div>
-
-                        <div id="modal4" class="modal">
-                            <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h2 class="h2_modal">Perfil do Agressor.</h2>
-                            <p>Entenda os padrões de comportamento comuns em agressores para identificar sinais de alerta.</p>
-                            <h3 class="h3_modal">Características comuns:</h3>
-                            <ul>
-                                <li><p>Comportamento controlador e possessivo.</p></li>
-                                <li><p>Ciúmes excessivos e infundados.</p></li>
-                                <li><p>Mudanças rápidas de humor.</p></li>
-                                <li><p>Histórico de violência em relacionamentos anteriores.</p></li>
-                                <li><p>Tendência a culpar outros por seus problemas.</p></li>
-                                <li><p>Visão estereotipada sobre papéis de gênero.</p></li>
-                                <li><p>É importante lembrar que nem todos os agressores apresentam todas essas características, e a presença de algumas delas não necessariamente indica que alguém é um agressor. No entanto, a combinação de vários desses comportamentos pode ser um sinal de alerta.</p></li>
-                                <li><p>Se você reconhece muitos desses comportamentos em alguém próximo, busque ajuda e orientação profissional.</p></li>
-                                <li class="li_final"><p>Se você reconhece muitos desses comportamentos em alguém próximo, busque ajuda e orientação profissional.</p></li>
-                            </ul>
-                            </div>
-                        </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Desenvolvido Por:</h3>
+                    <div class="credits-grid">
+                        <div>Gustavo Marques</div>
+                        <div>Davi Benegto</div>
+                        <div>Diego Vieira</div>
+                        <div>Miguel Ângelo</div>
+                        <div>Kamila</div>
+                        <div>Nicolly</div>
+                        <div>Oséias</div>
                     </div>
                 </div>
-            </article>
+            </div>
 
-            <article id="contato" class="help">
-                <h4>Recursos de ajuda</h4>
-                <p class="paragrafo__cima">Se você ou alguém que você conhece precisa de apoio, saiba que existem recursos
-                    confiáveis prontos para ajudar. Não hesite em buscar ajuda!"</p>
+            <div class="footer-bottom">
+                <p>© 2025 Desenvolvido por alunos da Uniamerica</p>
+            </div>
+        </div>
+    </footer>
 
-                <div class="help__container">
-                    <div class="secao">
-                        <div class="secao__titulo">
-                            <img src="assets/tel.png" alt="" />
-                            <h5>Linha de Ajuda Nacional</h5>
-                        </div>
-                        <p class="paragrafo__baixo">Disque 100 - Disque Direitos Humanos</p>
-                        <ul>
-                            <li>Disponível 24 horas por dia, 7 dias por semana</li>
-                            <li>Atendimento em português, espanhol e inglês</li>
-                            <li>Orientação sobre os direitos e serviços públicos</li>
-                            <li>Encaminhamento para outros serviços, quando necessário</li>
-                        </ul>
-                    </div>
+    <!-- Modal do formulário de ajuda -->
+    <?php require_once 'php/formulario.php'; ?>
 
-                    <div class="secao">
-                        <div class="secao__titulo">
-                            <img src="assets/shield.png" alt="" />
-                            <h5>Delegacia Especializada ou Polícia Civil</h5>
-                        </div>
-                        <p class="paragrafo__baixo">Atendimento às vítimas de violência:</p>
-                        <ul>
-                            <li>Registro de Boletins de Ocorrência</li>
-                            <li>Solicitação de medidas protetivas de urgênci</li>
-                            <li>Suporte em investigações de violência ou de gênero</li>
-                            <li>Atendimento presencial ou online</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-
-            <footer>
-                <section class="footer__container">
-                    <div>
-                        <h5>Disque Denúncia</h5>
-                        <ul>
-                            <li><span>Ligue 180 -</span> Central de Atendimento.</li>
-                            <li><span>Disque 100 -</span> Direitos Humanos</li>
-                            <li><span>Ligue 190 -</span> Polícia Militar (Emergências) </li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h5>Desenvolvido Por:</h5>
-                        <ul class="alunos">
-                            <li>Davi Benegto</li>
-                            <li>Diego Vieira</li>
-                            <li>Gustavo Marques</li>
-                            <li>Kamila Reis</li>
-                            <li>Miguel Ângelo</li>
-                            <li>Nicolly Almeida</li>
-                            <li>Oséias</li>
-                        </ul>
-                    </div>
-                </section>
-            </footer> 
-        </main>
-        <script src="js/script.js"></script>
-    </body>
+    <script src="./js/script.js"></script>
+</body>
 </html>

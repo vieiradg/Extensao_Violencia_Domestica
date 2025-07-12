@@ -408,6 +408,9 @@ body {
   padding: 1rem;
 }
 
+.msgModal {
+  font-weight: 600;
+}
 .modal-content {
   background-color: white;
   border-radius: 0.5rem;
